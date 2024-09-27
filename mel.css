@@ -1,0 +1,18 @@
+.content {
+    width: 600px;
+}
+
+.overview, .syntax, .examples {
+    text-align: justify;
+}
+
+@media (max-width:600px) {
+    .content {
+        width: 95%;
+    }
+
+    .overview, .syntax, .examples {
+        text-align: left;
+    }
+}
+

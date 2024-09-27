@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia da Linguagem Mel</title>
+
+    <link href="fldsmdfr-icon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="fldsmdfr-icon.png" rel="apple-touch-icon" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="mel.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Aprenda FLDSMDFR</div>
+        <svg id="menuIcon" class="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </header>
+    <div id="menuzinho" class="dropdown">
+        <ul>
+            <a href="index.html">
+                <li class="droplist">Início</li>
+            </a>
+            <hr>
+            <a href="#overview">
+                <li class="droplist">Visão Geral</li>
+            </a>
+            <hr>
+            <a href="#syntax">
+                <li class="droplist">Sintaxe</li>
+            </a>
+            <hr>
+            <a href="#examples">
+                <li class="droplist">Exemplos</li>
+            </a>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="overview" class="overview">
+            <h1>Visão Geral da Linguagem Mel</h1>
+            <p>A linguagem Mel, desenvolvida para o ambiente FLDSMDFR, foi pensada para o controle de dispositivos em sistemas de manufatura, como braços robóticos. É simples, prática e focada em produtividade.</p>
+        </section>
+    
+        <section id="syntax" class="syntax">
+            <h2>Sintaxe Básica</h2>
+            <h3><strong>Declaração de variáveis:</strong></h3>
+            <ul>
+                <li><i>Variável Inteira:</i> <code>  x = 10;</code></li>
+                <li><i>Variável Float:</i> <code>x = 10.01;</code></li>
+                <li><i>Variável Booleana:</i> <code>x = true</code></li>
+            </ul>
+            <br>
+            <h3><strong>Aritmética</strong></h3>
+            <ul>
+                <li><i>Soma:</i> <code>10 + 5 => 15</code></li>
+                <li><i>Subtração:</i> <code>10 - 5 => 5</code></li>
+                <li><i>Multiplicação:</i> <code>10 * 5 => 50</code></li>
+                <li><i>Divisão:</i> <code>10 / 5 => 2</code></li>
+                <li><i>Preferência para parênteses:</i> <code>&lpar;8+2&rpar;/5 => 5</code></li>
+                <li><i>Sinais em operações:</i> <code>10 - &lpar;-10&rpar; => 20</code></li>
+                <li><i>Números decimais:</i> <code>10 - 5.5 =></code></li>
+            </ul>
+            <br>
+            <h3><strong>Comparação:</strong></h3>
+            <ul>
+                <li><i>Maior:</i> <code>10 &gt; 5</code></li>
+                <li><i>Menor:</i> <code>5 &lt; 10</code></li>
+                <li><i>Maior ou igual:</i> <code>x &gt;= 5</code></li>
+                <li><i>Menor ou igual:</i> <code>x &lt;= 10</code></li>
+                <li><i>Igual:</i> <code>5 == 5</code></li>
+                <li><i>Diferente:</i> <code>10 != 5</code></li>
+            </ul>
+            <br>
+            <h3><strong>Lógica Booleana:</strong></h3>
+            <ul>
+                <li><i>And &lpar;lógica E&rpar;:</i> <code>1==1 and 2==2 <br> 1==1 && 2==2</code></li>
+                <li><i>Or &lpar;lógica OU&rpar;:</i> <code>1==1 or 2==2 <br> 1==1 || 2==2</code></li>
+                <li><i>Not:</i> <code>!bool</code></li>
+            </ul>
+            <br>
+            <h3><strong>Comparação:</strong></h3>
+            <ul>
+                <li><i>Maior:</i> <code>10 &gt; 5</code></li>
+                <li><i>Menor:</i> <code>5 &lt; 10</code></li>
+                <li><i>Maior ou igual:</i> <code>x &gt;= 5</code></li>
+                <li><i>Menor ou igual:</i> <code>x &lt;= 10</code></li>
+                <li><i>Igual:</i> <code>5 == 5</code></li>
+                <li><i>Diferente:</i> <code>10 != 5</code></li>
+            </ul>
+            <br>
+            <h3><strong>Estrutura de Dados:</strong></h3>
+            <ul>
+                <li><i>If/Else:</i><pre>
+                    <code>
+    if (1 = 1) {
+        print 1; 
+    } else { 
+        print 0;
+    }
+                </code>
+                </pre></li> 
+                <li><i>While:</i><pre>
+                    <code>
+    while (x &lt; 10) {
+        print x;
+        x = x + 1;
+    }
+                </code>
+                </pre></li>
+                <li><i>For:</i> <pre>
+                    <code>
+    for(i = 0; i &lt; 10; i++) {
+        print i;
+    }
+                </code>
+                </pre></li>
+                <li><i>Comentários:</i><br><code>//Este é um comentário reconhecido como tal pela linguagem Mel e pela Interface FLDSMDFR</code></li> 
+            </ul>
+        </section>
+    
+        <section id="examples" class="examples">
+            <h2>Exemplos de Código</h2>
+            <pre>
+    <code>
+    move(base, 10000);
+    move(shoulder, -20000);
+    </code>
+            </pre>
+            <p>O código acima inicia o movimento do braço robótico com uma velocidade definida e, em seguida, para o movimento.</p>
+        </section>
+    
+    </div>
+    <a href="index.html" class="next-page-button" id="nextButton">Voltar ao Início</a>
+    <footer id="footer"
+        <p>&copy; 2024 Aprenda FLDSMDFR. Todos os direitos reservados.</p>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

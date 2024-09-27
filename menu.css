@@ -1,0 +1,35 @@
+.dropdown {
+    /* margin-top: -44px; */
+    height: 160px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 111;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    display: none;
+}
+
+.droplist {
+    color: white;
+    list-style: none;
+    font-size: x-large;
+}
+
+.menuLine {
+    stroke:#FFC107;
+}
+
+.droplist:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    cursor: pointer;
+}
